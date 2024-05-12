@@ -23,10 +23,11 @@
 #define prefixoIdCliente 2
 #define prefixoIdFilme 4
 #define charDivisor "-"
-#define diretorioClientes "geral/clientes.txt"
-#define diretorioFilmes "geral/filmes.txt"
-#define diretorioPopulares "geral/populares.txt"
-#define pastaClientes "clientes"
+#define diretorioClientes "../geral/clientes.txt"
+#define diretorioFilmes "../geral/filmes.txt"
+#define diretorioPopulares "../geral/populares.txt"
+#define pastaClientes "../clientes"
+#define arquivoTemporarioFilmes "../geral/temp.txt"
 
 // Estes enums são referentes as posições dos dados salvos,
 // Ex: o FL_id esta na posição 0, então o primeiro dado salvo é o ID
@@ -201,7 +202,7 @@ void limparBuffer()
 }
 
 // Limpa a tela
-void limparTela() { system("clear"); }
+void limparTela() { system("cls"); }
 
 // Centraliza o texto na tela
 void textoCentralizado(char *nome) { printf("                %s\n\n", nome); }
@@ -510,7 +511,6 @@ StructFA getFilmesAlugados()
 void editarPropiedadeFilme(char *id, int posicao, char *novoValor)
 {
   char linhaAlterada[tamanhoLinha] = {""};
-  char diretorioNovoArquivo[tamanhoLinha] = "geral/temp.txt";
   char linha[tamanhoLinha];
   char **linhasNovoArquivo = NULL;
   int totalLinhas = 0;
@@ -553,7 +553,7 @@ void editarPropiedadeFilme(char *id, int posicao, char *novoValor)
   }
 
   // escreve no novo arquivo e renomeia pro nome do antigo
-  FILE *novoArquivo = abrirArquivo(diretorioNovoArquivo, "a+", true);
+  FILE *novoArquivo = abrirArquivo(arquivoTemporarioFilmes, "a+", true);
 
   for (int x = 0; x < totalLinhas; x++)
     fprintf(novoArquivo, "%s", linhasNovoArquivo[x]);
@@ -562,7 +562,7 @@ void editarPropiedadeFilme(char *id, int posicao, char *novoValor)
   fclose(novoArquivo);
 
   remove(diretorioFilmes);
-  rename(diretorioNovoArquivo, diretorioFilmes);
+  rename(arquivoTemporarioFilmes, diretorioFilmes);
 }
 
 // Modifica a quantidade de um filme

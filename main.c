@@ -1,4 +1,5 @@
 #include "clientes.h"
+#include <locale.h>
 
 // Função para alugar um filme
 void alugarFilme()
@@ -323,7 +324,7 @@ void menuInicial()
   case 11:
     modificarQuantidade();
     break;
-  case ultimaOpcao:
+  case 12:
     encerrarProgama("Progama encerrado com sucesso! Volte Sempre.");
     break;
   default:
@@ -357,6 +358,7 @@ void telaInicial()
 // função main q fica chamando o menu inicial "infinitamente"
 int main()
 {
+  setlocale(LC_ALL, ".UTF8");
 
   telaInicial();
 
