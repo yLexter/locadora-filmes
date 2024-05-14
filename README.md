@@ -2,6 +2,9 @@
 
 Este projeto de locadora de filmes em C para a disciplina de Linguagem de Progamação I (Professor Kláudio) foi desenvolvido com o objetivo de explorar os conhecimentos em C, especialmente em estruturas de dados (linked list) e alocação dinâmica de memória e Manipulação de Arquivos.
 
+## Video de Demonstração
+[![Video Youtube](https://img.youtube.com/vi/UQ8NfJAF8ks/0.jpg)](https://www.youtube.com/watch?v=UQ8NfJAF8ks)
+
 ## Funcionalidades
 
 O sistema possui as seguintes funcionalidades:
@@ -21,22 +24,20 @@ O sistema possui as seguintes funcionalidades:
 
 ## Funcionalidades de Ordenação (Cliente)
 
-O sistema possui as seguintes opções de ordenação para os Clientes:
-
-1. **Crescente:** Ordena os clientes em ordem crescente.
-2. **Decrescente:** Ordena os clientes em ordem decrescente.
-3. **Por Idade:** Ordena os clientes por idade.
-4. **Nenhuma:** Não aplica nenhuma ordenação.
+1. `Crescente`: Ordena os clientes em ordem crescente.
+2. `Decrescente`: Ordena os clientes em ordem decrescente.
+3. `Por Idade:`: Ordena os clientes por idade.
+4. `Nenhuma:`: Não aplica nenhuma ordenação.
 
 ## Funcionalidades de Ordenação de (Filmes)
 
-1. `ordenarFilmesPorTituloCrescente`: Ordena os filmes por título em ordem crescente.
-2. `ordenarFilmesPorTituloDecrescente`: Ordena os filmes por título em ordem decrescente.
-3. `ordenarFilmesPorDuracao`: Ordena os filmes por duração.
-4. `ordenarFilmesPorGenero`: Ordena os filmes por gênero.
-5. `ordenarFilmesPorNota`: Ordena os filmes por nota.
-6. `ordenarFilmesPorClassificacao`: Ordena os filmes por classificação.
-7. `ordenarFilmesPorQuantidade`: Ordena os filmes por quantidade.
+1. `TituloCrescente`: Ordena os filmes por título em ordem crescente.
+2. `TituloDecrescente`: Ordena os filmes por título em ordem decrescente.
+3. `Duracao`: Ordena os filmes por duração.
+4. `Genero`: Ordena os filmes por gênero.
+5. `PorNota`: Ordena os filmes por nota.
+6. `Classificacao`: Ordena os filmes por classificação.
+7. `Quantidade`: Ordena os filmes por quantidade.
 
 ## Banco de Dados
 
