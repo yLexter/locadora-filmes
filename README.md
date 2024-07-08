@@ -1,44 +1,44 @@
-# Projeto Locadora de Filmes
+# Movie Rental Project
 
-Este projeto de locadora de filmes em C para a disciplina de Linguagem de Progamação I (Professor Kláudio) foi desenvolvido com o objetivo de explorar os conhecimentos em C, especialmente em estruturas de dados (linked list) e alocação dinâmica de memória e Manipulação de Arquivos.
+This movie rental project in C for the Programming Language I discipline (Professor Kláudio) was developed with the aim of exploring knowledge in C, especially in data structures (linked list) and dynamic memory allocation and File Manipulation .
 
-## Video de Demonstração
+## Demo Video
 [![Video Youtube](https://img.youtube.com/vi/UQ8NfJAF8ks/0.jpg)](https://www.youtube.com/watch?v=UQ8NfJAF8ks)
 
-## Funcionalidades
+## Functionalities
 
-O sistema possui as seguintes funcionalidades:
+The system has the following functionalities:
 
-1. **Ver Filmes:** Permite visualizar a lista de filmes disponíveis na locadora.
-2. **Alugar Filme:** Permite alugar um filme da locadora.
-3. **Cadastrar Cliente:** Permite cadastrar um novo cliente na locadora.
-4. **Mostrar Clientes:** Exibe a lista de clientes cadastrados na locadora.
-5. **Deletar Cliente:** Permite excluir um cliente da lista de clientes cadastrados.
-6. **Mostrar Filmes Alugados:** Exibe a lista de filmes atualmente alugados por clientes.
-7. **Deletar Filme:** Permite excluir um filme da lista de filmes disponíveis na locadora.
-8. **Cadastrar Filme:** Permite cadastrar um novo filme na locadora.
-9. **Devolver Filme:** Permite que um cliente devolva um filme alugado.
-10. **Mostrar Filmes Populares:** Exibe os filmes mais populares (mais alugados).
-11. **Alterar quantidade dos filmes:** Permite alterar a quantidade de cópias disponíveis de um filme.
-12. **Sair:** Encerra o programa.
+1. **View Movies:** Allows you to view the list of films available at the store.
+2. **Rent Movie:** Allows you to rent a movie from the video store.
+3. **Register Customer:** Allows you to register a new customer at the rental company.
+4. **Show Customers:** Displays the list of customers registered with the rental company.
+5. **Delete Customer:** Allows you to delete a customer from the list of registered customers.
+6. **Show Rented Movies:** Displays the list of movies currently rented by customers.
+7. **Delete Movie:** Allows you to delete a movie from the list of movies available at the rental store.
+8. **Register Movie:** Allows you to register a new movie at the rental store.
+9. **Return Movie:** Allows a customer to return a rented movie.
+10. **Show Popular Movies:** Displays the most popular (most rented) movies.
+11. **Change number of films:** Allows you to change the number of available copies of a film.
+12. **Exit:** Closes the program.
 
-## Funcionalidades de Ordenação (Cliente)
+## Ordering Functions (Client)
 
-1. `Crescente`: Ordena os clientes em ordem crescente.
-2. `Decrescente`: Ordena os clientes em ordem decrescente.
-3. `Por Idade:`: Ordena os clientes por idade.
-4. `Nenhuma:`: Não aplica nenhuma ordenação.
+1. `Ascending`: Sorts customers in ascending order.
+2. `Descending`: Sorts customers in descending order.
+3. `By Age:`: Sorts customers by age.
+4. `None:`: Does not apply any ordering.
 
-## Funcionalidades de Ordenação de (Filmes)
+## Sorting Functions (Movies)
 
-1. `TituloCrescente`: Ordena os filmes por título em ordem crescente.
-2. `TituloDecrescente`: Ordena os filmes por título em ordem decrescente.
-3. `Duracao`: Ordena os filmes por duração.
-4. `Genero`: Ordena os filmes por gênero.
-5. `PorNota`: Ordena os filmes por nota.
-6. `Classificacao`: Ordena os filmes por classificação.
-7. `Quantidade`: Ordena os filmes por quantidade.
+1. `TitleAscending`: Sorts the films by title in ascending order.
+2. `Descending Title`: Sorts the films by title in descending order.
+3. `Duration`: Sorts the films by duration.
+4. `Genre`: Sorts films by genre.
+5. `By Rating`: Sorts the films by rating.
+6. `Rating`: Sorts the films by rating.
+7. `Quantity`: Sorts the films by quantity.
 
-## Banco de Dados
+## Database
 
-O sistema utiliza arquivos de texto (`.txt`) como banco de dados para armazenar todas as informações sobre filmes e clientes.
+The system uses text files (`.txt`) as a database to store all information about films and customers.
